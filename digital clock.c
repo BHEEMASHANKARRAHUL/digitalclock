@@ -1,4 +1,4 @@
-// Import the header files
+// Import the required libaries
 #include <stdio.h>
 #include <time.h>
 #include <unistd.h>
@@ -11,11 +11,11 @@ int main() {
    printf("enter time");
    scanf("%d%d%d",&hour,&minute,&second);
    while(1) {
-       // Clear the output on screen
+       // for regular change of time without displaying previous one
        // for windows use system("cls")
        system("clear"); 
        
-       // Print the time in HH : MM : SS format
+       
        printf("%02d : %02d : %02d ",hour,minute,second);
        
        // Clear the output buffer in gcc
